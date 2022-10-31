@@ -31,6 +31,18 @@ button {
   text-decoration: none;
   display: inline-block;
   max-width: fit-content;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: #027297;
+}
+
+button:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: #014358;
 }
 
 input {
@@ -115,16 +127,24 @@ main {
   background: #84cd1b;
 }
 
-.fruit_carmazin {
+.fruit_red {
   background: #dc143c;
+}
+
+.fruit_orange {
+  background: #ff7300;
 }
 
 .fruit_yellow {
   background: #ffd800;
 }
 
-.fruit_lightbrown {
-  background: #cd853f;
+.fruit_lightblue {
+  background: #00ffe5;
+}
+
+.fruit_blue {
+  background: #0040ff;
 }
 
 .fruit__info {
@@ -135,4 +155,19 @@ main {
   background: #fff;
   height: 100%;
   padding: 10px;
+}
+
+.color__input {
+  margin: 5px 10px 5px 0;
+  border: 0;
+  padding: 0 10px;
+  line-height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  background-color: #3cbc8d;
+  color: white;
+  max-width: 200px;
+  height: 2rem;
 }
